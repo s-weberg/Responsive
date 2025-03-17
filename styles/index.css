@@ -1,9 +1,8 @@
 
 body {
     background-color: #000000;
-  
-      max-width: max-content;
-      margin: auto;
+    max-width: 1440px;
+    width: 100%;
     
 }
 
@@ -24,6 +23,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  
   justify-content: space-between;
   color: #FFF;
   height: 50px;
@@ -40,6 +40,7 @@ main {
   letter-spacing: -0.25px;
   color: #FFFFFF;
   text-decoration: none;
+  margin-left: 9px;
 }
 
 .menu {
@@ -139,6 +140,7 @@ main {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    align-items: center;
   }
   .menu > li {
     display: flex;
@@ -148,12 +150,27 @@ main {
     width: 100%;
     color: white;
     background-color: #222;
+
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+
+  
 }
 
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4d4949;
+  background-color: #FFFFFF;
+  opacity: 60%;
+  border-radius: 5px;
+  
+}
 
 .container-content{
     display: flex;
@@ -182,7 +199,7 @@ main {
     flex-direction: column;
     align-self: center;
     max-width: 50%;  
-    display: inline-block;        
+    display: inline-block;  
 }
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
@@ -207,6 +224,7 @@ main {
     line-height: 102px;
     letter-spacing: -2px;
     color: #FFFFFF;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 720px) and (max-width: 1440px) {
@@ -236,7 +254,8 @@ main {
     line-height: 34px;
     color: #FFFFFF;
     margin-top: 23px;
-    margin-bottom: 45px;
+    margin-left: 20px;
+    
 }
 
 
@@ -244,6 +263,7 @@ main {
 @media screen and (min-width: 720px) and (max-width: 1440px) {
     .info {
       font-size: 22px;
+      width: 410px;
     }
   } 
 
@@ -252,6 +272,7 @@ main {
       font-size: 22px;
       text-align: center;
       line-height: 33px;
+      width: 574px;
     }
   } 
 
@@ -262,14 +283,17 @@ main {
       display: flex;
       text-align: center;
       line-height: 18px;
+      width: 211px;
+      height: 49px;
     }
   } 
 
 
-.image-box {
+  .image-box {
     display: flex;
     justify-content: center;
     display: inline-block; 
+   
   
 }
 
@@ -277,8 +301,3 @@ img {
     max-width: 100%;
 
 }
-
-
-
-
-

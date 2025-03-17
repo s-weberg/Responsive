@@ -21,9 +21,9 @@
             </label>
 
             <ul class="menu">
-              <li>Works</li>
-              <li>Services</li>
-              <li>Contacts</li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contacts</a></li>
             </ul>
           </section>
 
@@ -50,7 +50,11 @@
             </div>
 
             <div class="image-box">
-                <img src="images/man-image.jpg" alt="Picture of a man">
+                <picture>
+                    <source media="(max-width: 720px)" srcset="images/man-320.png">
+                    <source media="(max-width: 1440px)" srcset="images/man-720.png">
+                    <img src="/images/man-image.jpg" alt="Man" >
+                </picture>
             </div>
         </div>
 
